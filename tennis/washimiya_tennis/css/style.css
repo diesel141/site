@@ -1,0 +1,70 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: solid 6px #627295;
+    border-radius: 20px;
+}
+
+.btn:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+}
+
+.btn-yellow {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    width: auto;
+    height: 200px;
+}
+
+.btn-green {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    width: auto;
+    height: 200px;
+}
+
+
+.btn-blue {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    width: auto;
+    height: 200px;
+}
+
+.btn-red {
+    background-color: indianred;
+    color: white;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    width: auto;
+    height: 200px;
+}
+
+.btn-master {
+    padding: 5px 25px;
+    font-size: calc(0.5em + 0.5vw);
+    background-color: gray;
+    color: white;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-bottom: solid 6px #627295;
+    border-radius: 10px;
+    background-color: lightgray;
+    color: black;
+}

@@ -1,0 +1,19 @@
+.firewall {
+background-image:url(./ARGS/image/ファイヤーウォール2.bmp);
+background-repeat:no-repeat;
+background-position:left top;
+}
+.waterlighter {
+background-image:url(./ARGS/image/Water_lighter.jpg);
+background-repeat:no-repeat;
+background-position:left top;
+}
+.playlist {
+width: 900px;
+height: 80px;
+border: 2px #2b2b2b solid;
+background-color: #000000;
+}
+td {
+font-size: 10pt;
+}

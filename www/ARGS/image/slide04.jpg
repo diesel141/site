@@ -1,0 +1,240 @@
+[Version]
+Signature="$WINDOWS NT$"
+Provider=Microsoft
+LayoutFile=layout.inf
+
+
+[ServicesToDisable]
+f,"%windir%\system32\drivers\palmusb.sys","3.20",compdata\generic.htm,compdata\generic.txt,%palmusb%
+s,Alkb2k,compdata\alkb2k.htm,compdata\alkb2k.txt,%ALKB2K%
+s,Aclient,compdata\aclient.htm,compdata\aclient.txt,%ACLIENT%,c:\altiris\aclient\aclient.exe,"5.0.238"
+s,Aclient,compdata\aclient.htm,compdata\aclient.txt,%ACLIENT%,c:\compaq\aclient\aclient.exe,"5.0.238"
+s,"Intel CI Manager",compdata\CiMgr.htm,compdata\CiMgr.txt,%CiManager%,"%systemdrive%\Program files\Intel\LDCM\ci\cimgr\CiMgrLdr.exe","6.0.133.0"
+s,tscidrv,compdata\tsscidrv.htm,compdata\tsscidrv.txt,%tscidrv%,,,0xffffffe0,ntcompat.inf,"TSCIDRV_INST"
+s,tpasswrd,compdata\tsbds.htm,compdata\tsbds.txt,%tsbds%,,,0xffffffe0,ntcompat.inf,"TSBDS_INST"
+s,tsbsrv,compdata\tsbselba.htm,compdata\tsbselba.txt,%tsbselbay%,,,0xffffffe0,ntcompat.inf,"TSBSELBAY_INST"
+d,winntupg\msmqcomp.dll,MsmqComp
+d,winntupg\boscomp.dll,BosSoftBlockCheck
+d,winntupg\inpupgrd.dll,InputUpgradeCheck
+d,winntupg\netupgrd.dll,NetUpgradeCompatibilityCheck,NetUpgradeHandleCompatibilityHaveDisk
+s,titsb,compdata\titsb.htm,compdata\titsb.txt,%titsb%,,,0xffffffe0,ntcompat.inf,"TITSB_INST"
+d,winntupg\vidupgrd.dll,VideoUpgradeCheck
+d,winntupg\ftcomp.dll,FtCompatibilityCheckWarning,,1
+f,PresRdy.exe,"1.0.0.23",compdata\incompat.htm,compdata\incompat.txt,%HPPRESREADY%
+f,%dccmanpath%,"0.0",compdata\wce21.htm,compdata\wce21.txt,%wce21%
+f,%snmpagents%,"2.3.0.0",compdata\hdmib.htm,compdata\hdmib.txt,%hdmib%,ntcompat.inf,"hdmib_INST"
+f,%intelatapf%,"0.0",compdata\intelata.htm, compdata\intelata.txt,%intelata%,ntcompat.inf,"INTELATA_INST"
+f,%intellisync%,"1.60.001", compdata\pumacsm.htm, compdata\pumacsm.txt,%pumacsm%,ntcompat.inf,"PUMACSM_INST"
+f,%palmvii%,"3.0.2.0",compdata\palm.htm,compdata\palm.txt,%palm%,,,0xffffffe0
+f,"%systemdrive%\ibmdmi\dosbios.bat","0.0",compdata\dmibios.htm,compdata\dmibios.txt,%ibmdmibios%,ntcompat.inf,"IBMDMIBIOS_INST"
+f,"%SystemDrive%\Program Files\Compaq\Compaq Power Management\PWRCON32.CPL","4.0.1.4",compdata\cpqpwrex.htm,compdata\cpqpwrex.txt,%cpqpwrex%,ntcompat.inf,"CPQPWREX_INST",2
+f,"%systemdrive%\rzs\rcpro\rcentrll.exe","4.9.0.0",compdata\rcentrl.htm,compdata\rcentrl.txt,%rcentrl%,ntcompat.inf,"rcentrl_inst"
+f,"%systemdrive%\THINKPAD\fuelw32.exe","0.0",compdata\tpfuel.htm,compdata\tpfuel.txt,%tpfuel%,ntcompat.inf,"TPFUEL_INST"
+f,"%systemdrive%\welcome\ibmwc.exe","0.0",compdata\wcmigrat.htm,compdata\wcmigrat.txt,%ibmwc%
+f,"%SystemRoot%\CPQDIAG\CPQDIAG.EXE","1.0",compdata\cpqdiagc.htm,compdata\cpqdiagc.txt,%cpqdiag_ds%,ntcompat.inf,"CPQDIAG_INST"
+f,"%systemroot%\system32\drivers\waveart.sys","1.95.1.1",compdata\generic.htm,compdata\generic.txt,%waveart%
+f,"%SystemDrive%\Program Files\Toshiba\Client Manager\cmtos.exe",,compdata\cltmgr.htm,compdata\cltmgr.txt,%cmtos%,ntcompat.inf,"CLTMGR_INST"
+f,"%SystemDrive%\Program Files\Memorex\USB CompactFlash Card Reader\iconfig.dll","4.0.0.2",compdata\generic.htm,compdata\generic.txt,%SCM_USB_Compact_Flash%,ntcompat.inf,"SCM_COMPACTFLASH_UNINSTALL"
+f,"%windir%\hercunis.exe","0.0",compdata\hercules.htm,compdata\hercules.txt,%hercpwr%,ntcompat.inf,"Hpwr_INST"
+f,"%windir%\system32\dpwrapp.exe","10.0",compdata\bayman.htm,compdata\bayman.txt,%bayman%,ntcompat.inf,"SOFTEXDOCK_INST"
+f,"%windir%\system32\drivers\wn1394.sys","4.0.1381.1",compdata\aha8940.htm,compdata\aha8940.txt,%a8940%
+f,"%windir%\system32\ensmix32.exe","1.0.0.12",compdata\ensqaudm.htm,compdata\ensqaudm.txt,%ENSQAUDM%,ntcompat.inf,"ENSQAUDM_INST"
+f,"%windir%\system32\drivers\lkbdhlpr.sys", "1.1",compdata\logkcmd.htm,compdata\logkcmd.txt, %logkeycomm%,,,2
+f,"%windir%\system32\msplog.dll","1.0",compdata\msp1.htm,compdata\msp1.txt,%msp1s%
+f,"%windir%\system32\mspmsg.dll","2.0",compdata\msp2.htm,compdata\msp2.txt,%msp2s%
+f,"%windir%\system32\s3color.cpl","0.0",compdata\vidapplt.htm,compdata\vidapplt.txt,%s3color%
+f,"%windir%\system32\stlthg46.dll","4.00.1381.0115",compdata\generic.htm,compdata\generic.txt,%stlthg46%,ntcompat.inf,"stlthg46_inst",2
+f,"%windir%\system32\tcaudiag.exe","2.4",compdata\generic.htm,compdata\generic.txt,%tcaudiag%,ntcompat.inf,"TCAUDIAG_INST",2
+f,"%windir%\system32\wspcpl32.cpl","1.0",compdata\msp1.htm,compdata\msp1.txt,%msp1c%
+f,"%windir%\system32\drivers\winachsf.sys","0.0",compdata\winachsf.htm,compdata\winachsf.txt,%winachsf%,ntcompat.inf,"WINACHSF_INST"
+f,%dsmigratpath%,"5.0.2077.0",compdata\dsmu.htm,compdata\dsmu.txt,%dsmigrat%
+f,"%systemdrive%\Program Files\hp\smart\smartalerts.exe","1.0.0.0",compdata\hpsmart.htm,compdata\hpsmart.txt,%HPSMART%,ntcompat.inf,"HPSMART_INST"
+f,"%windir%\system32\drivers\NdcPrtNS.sys","1.5.0.4",compdata\ndcprtns.htm,compdata\ndcprtns.txt,%ndcprtns%,NTCompat.inf,"ndcprtns",0x2
+f,%hponetouchomni500path%,"1.0.0.1",compdata\hpcompat.htm,compdata\hpcompat.txt,%hponetouchomni500msg%,ntcompat.inf,"hponetouchomni500_inst"
+f,%hponetouchomnixe3path%,"1.0.0.1",compdata\hpcompat.htm,compdata\hpcompat.txt,%hponetouchomnixe3msg%,ntcompat.inf,"hponetouchomnixe3_inst"
+r,"HARDWARE\DESCRIPTION\System","SystemBiosVersion","NL440BX - PhoenixBIOS 4.0 Release 6.0     ",compdata\intlsisl.htm,compdata\intlsisl.txt,%intlsisl%
+r,"HARDWARE\DESCRIPTION\System","SystemBiosVersion","N440BX PhoenixBIOS BIOS Release 6.0",compdata\intlsisl.htm,compdata\intlsisl.txt,%intlsisl%
+r,"HARDWARE\DESCRIPTION\System","SystemBiosVersion","N440BX - PhoenixBIOS 4.0 Release 6.0     ",compdata\intlsisl.htm,compdata\intlsisl.txt,%intlsisl%
+r,"HARDWARE\DESCRIPTION\System","SystemBiosVersion","SC450NX - PhoenixBIOS 4.0 Release 6.0     ",compdata\intlsisl.htm,compdata\intlsisl.txt,%intlsisl%
+r,"SOFTWARE\3Com\DA",,,compdata\3Com.htm,compdata\3Com.txt,%3ComDA%,,,0xffffffe0
+r,"SYSTEM\CurrentControlSet\Control\Class\{4D36E980-E325-11CE-BFC1-08002BE10318}","UpperFilters","Sdselect",compdata\sdselect.htm,compdata\sdselect.txt,%sdselect%,ntcompat.inf,"SDSELECT_UNINSTALL"
+r,"SOFTWARE\Apple Computer, Inc.\QuickTime\3.0",,,compdata\quick3.htm,compdata\quick3.txt,%qt3%
+r,"SOFTWARE\Aironet\WinDGS",,,compdata\ciscoacu.htm,compdata\ciscoacu.txt,%AironetWinDGS%
+r,"SOFTWARE\Cisco\Aironet",,,compdata\ciscoacu.htm,compdata\ciscoacu.txt,%CiscoAironet%
+r,"SOFTWARE\Classes\QuestTableServer",,"Quest Table Activity",compdata\winsql.htm,compdata\winsql.txt,%sqlwin5%,,,0xffffffe0
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Trackpoint","DisplayName","Compaq EasyPoint IV",compdata\incompat.htm,compdata\incompat.txt,%cpqeasypoint4%
+r,"SOFTWARE\CyberMedia Inc\Oil Change\1.0",,,compdata\oilchg25.htm,compdata\oilchg25.txt,%oilchg25%
+r,"SOFTWARE\Equis\MetaStock\6.5",,,compdata\mstock.htm,compdata\mstock.txt,%mstock65%
+r,"SOFTWARE\McAfee\Crash Monitor","Version","1.0.5",compdata\crashmon.htm,compdata\crashmon.txt,%mcafeecr%,ntcompat.inf,"CrashMon_INST"
+r,"SOFTWARE\Micrografx\FlowCharter\7.0",,,compdata\flowch7.htm,compdata\flowch7.txt,%flow7%
+r,"SOFTWARE\Microsoft\Exchange\Setup","Build","837",compdata\msss3.htm,compdata\msss3.htm,%exch55%
+r,"SOFTWARE\Microsoft\MSSQLServer\MSSQLServer\CurrentVersion","CurrentVersion","6.50.201",compdata\sql.htm,compdata\sql.txt,%mssql65%
+r,"SOFTWARE\Microsoft\MSSQLServer\MSSQLServer\CurrentVersion","CurrentVersion","6.50.213",compdata\sql.htm,compdata\sql.txt,%mssql65%
+r,"SOFTWARE\Microsoft\MSSQLServer\MSSQLServer\CurrentVersion","CurrentVersion","6.50.240",compdata\sql.htm,compdata\sql.txt,%mssql65%
+r,"SOFTWARE\Microsoft\MSSQLServer\MSSQLServer\CurrentVersion","CurrentVersion","6.50.258",compdata\sql.htm,compdata\sql.txt,%mssql65%
+r,"SOFTWARE\Microsoft\MSSQLServer\MSSQLServer\CurrentVersion","CurrentVersion","6.50.281",compdata\sql.htm,compdata\sql.txt,%mssql65%
+r,"SOFTWARE\Microsoft\Site Server\3.0","","",compdata\msss3.htm,compdata\msss3.txt,%siteserver%
+r,"SOFTWARE\Microsoft\SNA Server\CurrentVersion",SNAVersion,"2.0",compdata\sna.htm,compdata\sna.txt,%sna2%
+r,"SOFTWARE\Microsoft\SNA Server\CurrentVersion",SNAVersion,"2.1",compdata\sna.htm,compdata\sna.txt,%sna21%
+r,"SOFTWARE\Microsoft\SNA Server\CurrentVersion",SNAVersion,"2.11",compdata\sna.htm,compdata\sna.txt,%sna211%
+r,"SOFTWARE\Microsoft\SNA Server\CurrentVersion",SNAVersion,"2.11 Service Pack 1",compdata\sna.htm,compdata\sna.txt,%sna211%
+r,"SOFTWARE\Microsoft\SNA Server\CurrentVersion",SNAVersion,"2.11 Service Pack 2",compdata\sna.htm,compdata\sna.txt,%sna211%
+r,"SOFTWARE\Microsoft\SNA Server\CurrentVersion",SNAVersion,"3.0",compdata\sna.htm,compdata\sna.txt,%sna3%
+r,"SOFTWARE\Microsoft\SNA Server\CurrentVersion",SNAVersion,"3.0 Service Pack 1",compdata\sna.htm,compdata\sna.txt,%sna3%
+r,"SOFTWARE\Microsoft\SNA Server\CurrentVersion",SNAVersion,"3.0 Service Pack 2",compdata\sna.htm,compdata\sna.txt,%sna3%
+r,"SOFTWARE\Microsoft\SNA Server\CurrentVersion",SNAVersion,"4.0",compdata\sna.htm,compdata\sna.txt,%sna4%
+r,"SOFTWARE\Microsoft\SNA Server\CurrentVersion",SNAVersion,"4.0 Service Pack 1",compdata\sna.htm,compdata\sna.txt,%sna4%
+r,"SOFTWARE\Microsoft\SNA Server\CurrentVersion",SNAVersion,"4.0 Service Pack 2",compdata\sna.htm,compdata\sna.txt,%sna4%
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\hdmon.exe",,,compdata\hdmon.htm,compdata\hdmon.txt,%hdmon%,ntcompat.inf,"HDMON_INST",0xffffffe0
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Run","ELSA DeskTray",,compdata\generic.htm,compdata\generic.txt,%Elsa2%,ntcompat.inf,"elsa1_inst",0xffffffe2
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Run","ELSA GLoria Control Tray",,compdata\generic.htm,compdata\generic.txt,%Elsa2%,ntcompat.inf,"elsa1_inst",0xffffffe2
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Run","ELSA Winman Suite",,compdata\generic.htm,compdata\generic.txt,%Elsa1%,ntcompat.inf,"elsa1_inst",0xffffffe2
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Run","PwrIcon","C:\WINNT\cpqwin\ntspd\pwricon.exe",compdata\pwricon.htm,compdata\pwricon.txt,%pwricon%,ntcompat.inf,"PWRICON_INST",0xffffffe0
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Run","BMMGAG",,compdata\generic.htm,compdata\generic.txt,%tppwrmon%,ntcompat.inf,"THINKPADPWRMON_INST"
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Cardware",,,compdata\award.htm,compdata\award.txt,%award%,ntcompat.inf,"AWARD_INST",0xffffffe0
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ConfigSafe",DisplayName,"ConfigSafe",compdata\csmigrat.htm,compdata\csmigrat.txt,%cfgsafe%,ntcompat.inf,"CFGSAFE_INST",0xffffffe0
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\DVD Video","DisplayName","DVD Video Player 2.10",compdata\tosdvd.htm,compdata\tosdvd.txt,%tosdvd%,ntcompat.inf,"TOSDVD_INST"
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\PowerProNT1DeinstKey",,,compdata\sspower.htm,compdata\sspower.txt,%sspower%,ntcompat.inf,"SYSTEMSOFTPM_INST",0xffffffe0
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Turtle Beach Daytona",,,compdata\dayt.htm,compdata\dayt.txt,%daytona%,ntcompat.inf,"Dayt_INST",0xffffffe0
+r,"Software\Microsoft\Windows\CurrentVersion\Uninstall\WinNT Multibay Deinstall Key","UninstallString",,compdata\cpqmulti.htm,compdata\cpqmulti.txt,%cpqmulti%,ntcompat.inf,"CPQPNPMG_INST",0xffffffe0
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\65D9643D-06E8-47d6-865E-80F4CC9BB879","","",compdata\msss3.htm,compdata\msss3.txt,%exch2000%
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\8D4BCD88-3236-11d2-AB4E-00C04FB1799F","","",compdata\msss3.htm,compdata\msss3.txt,%exch2000%
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{5E076CF2-EFED-43A2-A623-13E0D62EC7E0}","","",compdata\admpkxp.htm,compdata\admpkxp.txt,%atpxp%,,,0x10
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{B7298620-EAC6-11D1-8F87-0060082EA63E}","","",compdata\admpkw2k.htm,compdata\admpkw2k.txt,%atpw2k%,,,0x10
+r,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\Q317272",,,compdata\generic.htm,compdata\generic.txt,"Q317272",ntcompat.inf,"Q317272_INSTALL",2
+r,"Software\Microsoft\Windows NT\CurrentVersion\Winlogon","GinaDll",,compdata\isvgina.htm,compdata\isvgina.txt,%isvgina%
+r,"SOFTWARE\Microsoft\bh\CurrentVersion\NetRules",InfOption,"NETMON",compdata\nmsms.htm,compdata\nmsms.txt,%nmsmsAgent%,,,0xffffffe0
+r,"SOFTWARE\Microsoft\bh\CurrentVersion\NetRules",InfOption,"NETMONTOOLS",compdata\nmsms.htm,compdata\nmsms.txt,%nmsmsAgent%,,,0xffffffe0
+r,"SOFTWARE\Palm Computing\Palm Desktop\3.0.3",,,compdata\palm.htm,compdata\palm.txt,%palm%,,,0xffffffe0
+r,"SOFTWARE\Palm Computing\Palm Desktop\3.0.1",,,compdata\palm.htm,compdata\palm.txt,%palm%,,,0xffffffe0
+r,"SOFTWARE\SystemSoft\CardWizard for Windows NT",,,compdata\ssi365.htm,compdata\ssi365.txt,%ssi365%,ntcompat.inf,"SYSTEMSOFTCW_INST",0xffffffe0
+r,"SOFTWARE\U.S. Robotics\Palm Desktop\3.0",,,compdata\palm.htm,compdata\palm.txt,%palm%,,,0xffffffe0
+r,"SOFTWARE\Network ICE\BlackICE\2.1.cn",,,compdata\BlackIce.htm,compdata\BlackIce.txt,%BlackIce21cn%
+r,"system\currentcontrolset\enum\root\pcmcia&toshiba_america-3cxm056-bnw-da52\0000","hardwareid","pcmcia\toshiba_america-3cxm056-bnw-da52",compdata\generic.htm,compdata\generic.txt,%tos3comwin%,ntcompat.inf,"TOS3COMM_INST",0xffffffe2
+r,%hpmon_regkey%,,,compdata\hpmon.htm,compdata\hpmon.txt,%hpmon%
+r,"SYSTEM\CurrentControlSet\Control\Print\Monitors\Lexmark DLC Network Port",,,compdata\lexdlc.htm, compdata\lexdlc.txt,%lexdlc%
+r,"SYSTEM\CurrentControlSet\Control\Print\Monitors\Lexmark TCP/IP Network Port",,,compdata\lextcp.htm, compdata\lextcp.txt,%lextcp%
+r,"Software\Microsoft\Windows\CurrentVersion\Uninstall\WINACPCI",,,compdata\generic.htm,compdata\generic.txt,%HSFADDREMOVE%,ntcompat.inf,"HSFADDREMOVE_INST",0x2
+r,"SOFTWARE\Microsoft\Windows\CurrentVersion\Run","KeyMaestro",,compdata\maestro0.htm,compdata\maestro0.txt,%maestro0%
+r,"Software\Microsoft\Windows\CurrentVersion\Uninstall\NVIDIA","DisplayName",,compdata\generic.htm,compdata\generic.txt,%nVidiaNT4Upgrade%,NTCompat.inf,"NVIDIA_NT4_UPGRADE",0x62
+r,"Software\Microsoft\Windows\CurrentVersion\Uninstall\3Dlabs Driver","DisplayName",,compdata\generic.htm,compdata\generic.txt,%3DlabsUpgrade%,NTCompat.inf,"3DLABS_UPGRADE",0x2
+s,hpconfig,compdata\hpcompat.htm,compdata\hpcompat.txt,%hpcimsg%,"%windir%\system32\hpconfig.exe","2.1.12.0"
+s,sps2cont,compdata\ps2cont.htm,compdata\ps2cont.txt,%ps2cont%,"%systemroot%\system32\drivers\ps2cont.sys","1.0"
+s,wtcls2k,compdata\wtcls2k.htm,compdata\wtcls2k.txt,%wtcls2k%,"%systemroot%\system32\drivers\wtcls2k.sys","1.0"
+s,ctz-crdl,compdata\ctz_crdl.htm,compdata\ctz_crdl.txt,%ctz_crdl%,"%systemroot%\system32\drivers\ctz-crdl.sys","1.1"
+s,"Intel LDCM LDIScan",compdata\ldcm.htm,compdata\ldcm.txt,%ldcm%,,,0xffffffe0
+s,"Intel LDCM Notification Monitor",compdata\ldcm.htm,compdata\ldcm.txt,%ldcm1%,,,0xffffffe0
+s,"Intel LDCM OSCI",compdata\ldcm.htm,compdata\ldcm.txt,%ldcm2%,,,0xffffffe0
+s,"NAV Auto-Protect",compdata\nav5.htm,compdata\nav5.txt,%nav5%,"%systemdrive%\Program Files\navnt\navapsvc.exe",5.3,,ntcompat.inf,"NAV5_INST"
+s,"Phoenix PM",compdata\phnixad.htm,compdata\phnixad.txt,%phoenixpm%,,,0xffffffe0,ntcompat.inf,"PHOENIXPM_INST"
+s,"duplex write cluster service",compdata\dwrite.htm,compdata\dwrite.txt,%duplexwrite%,,,0xffffffe2
+s,3cxm356,compdata\generic.htm,compdata\generic.txt,%3cxm356%,,,0xffffffe2,ntcompat.inf,"3CXM356_INST"
+s,accel3d,compdata\vgamode.htm,compdata\vgamode.txt,%accel3d%,"%systemroot%\system32\drivers\accel3d.sys","4.0.1381.4605"
+s,aic789x,compdata\generic.htm,compdata\generic.txt,%aic789x%,,,0xffffffe2
+s,aicdrv,compdata\aicdrv.htm,compdata\aicdrv.txt,%aicdrv%,,,0xffffffe0
+s,ainctl2k,compdata\lqdaudio.htm,compdata\lqdaudio.txt,%liquidaudio%,"%systemroot%\system32\drivers\ainctl2k.sys","1.28.0.0",,ntcompat.inf,"LiquidAudio_Uninst"
+s,aliSnd,compdata\generic.htm,compdata\generic.txt,%alisnd%,"%SystemRoot%\system32\drivers\alisnd.sys",,2
+s,allem3,compdata\generic.htm,compdata\generic.txt,%allegro3%,,,0xffffffe2
+s,als4000,compdata\generic.htm,compdata\generic.txt,%ALS4000%,,,0xffffffe0, ntcompat.inf,"ALS4000_INST"
+s,asicio,compdata\ldcm.htm,compdata\ldcm.txt,%LDCM%,,,2
+s,asicoem,compdata\ldcm.htm,compdata\ldcm.txt,%LDCM%,,,2
+s,ark,compdata\vgamode.htm,compdata\vgamode.txt,%ark%,"%systemroot%\system32\drivers\ark.sys","4.00"
+s,aspi32,compdata\generic.htm,compdata\generic.txt,%aspi%,"%systemroot%\system32\drivers\aspi32.sys","4.0"
+s,assetci,compdata\assetci.htm,compdata\assetci.txt,%assetci%,,,0xffffffe0
+s,atakmini,compdata\generic.htm,compdata\generic.txt,%atakmini%,,,0xffffffe2
+s,atapipd,compdata\generic.htm,compdata\generic.txt,%atapipd%,,,0xffffffe0
+s,atmhelpr,compdata\generic.htm,compdata\generic.txt,%atmhelpr%,,,2,ntcompat.inf,"ATMHELPR_INST"
+s,auddrive,compdata\generic.htm,compdata\generic.txt,%auddrive%,,,0xffffffe2
+s,cards,compdata\cardexec.htm,compdata\cardexec.txt,%cards%,,,0xffffffe0,ntcompat.inf,"SOFTEXPC_INST"
+s,cbide2lm,compdata\generic.htm,compdata\generic.txt,%tsb24cd%,,,0xffffffe2
+s,cdr4vsd,compdata\cdr4vsd.htm,compdata\cdr4vsd.txt,%cdr4vsd%
+s,cdrpwd,compdata\directcd.htm,compdata\directcd.txt,%directcd%,"%systemroot%\system32\drivers\cdrpwd.sys", "4.2.6.41",,ntcompat.inf,"DIRECTCD_INST"
+s,cdudf,compdata\directcd.htm,compdata\directcd.txt,%directcd%,"%systemroot%\system32\drivers\cdudf.sys","5.0.0.141",2
+s,udfreadr,compdata\directcd.htm,compdata\directcd.txt,%directcd%,"%systemroot%\system32\drivers\udfreadr.sys","5.0.0.141",2
+s,cdr4_2k,compdata\generic.htm,compdata\generic.txt,%roxioburning%,"%systemroot%\system32\drivers\cdr4_2k.sys","2.5.0.94",2
+s,cdralw2k,compdata\generic.htm,compdata\generic.txt,%roxioburning%,"%systemroot%\system32\drivers\cdralw2k.sys","1.0.0.1038",2
+s,prtseqrd,compdata\generic.htm,compdata\generic.txt,%roxioburning%,"%systemroot%\system32\drivers\PrtSeqRd.sys","2.0.2.75",2
+s,pwd_2k,compdata\generic.htm,compdata\generic.txt,%roxioburning%,"%systemroot%\system32\drivers\pwd_2K.sys","5.0.0.141",2
+s,cismbios,compdata\ldcm.htm,compdata\ldcm.txt,%ldcm3%,,,0xffffffe2
+s,cmosa,compdata\omc.htm,compdata\omc.txt,%cmosa%,,,0xffffffe0
+s,cmpci,compdata\generic.htm,compdata\generic.txt,%cmpci%,"%SystemRoot%\system32\drivers\cmpci.sys",,0x60
+s,cnr117,compdata\qic117.htm,compdata\qic117.txt,%cnr117%,,,0xffffffe0
+s,cnr157,compdata\generic.htm,compdata\generic.txt,%cnr157%,,,0xffffffe2
+s,cpq32fs2,compdata\generic.htm,compdata\generic.txt,%cpq32fs2%,,,0xffffffe2
+s,cpqmpd,compdata\generic.htm,compdata\generic.txt,%cpqmpd%,,,0xffffffe2
+s,cpqpnpmgr,compdata\cpqpnpmg.htm,compdata\cpqpnpmg.txt,%cpqpnpmg%,,,0xffffffe0,ntcompat.inf,"CPQPNPMG_INST"
+s,cpqrcmc,compdata\generic.htm,compdata\generic.txt,%cpqrcmc%,,,0xffffffe2
+s,cpqrs,compdata\generic.htm,compdata\generic.txt,%cpqrs%,"%systemroot%\system32\drivers\cpqrs.sys","4",0x2
+s,cpqsmrt2,compdata\generic.htm,compdata\generic.txt,%cpqsmrt2%,,,0xffffffe0
+s,cpqspm,compdata\generic.htm,compdata\generic.txt,%cpqspm%,,,0xffffffe2
+s,csa64xx,compdata\csa64xx.htm,compdata\csa64xx.txt,%csa64xx%,,,0xffffffe2,ntcompat.inf,"CSA64XX_INST"
+s,cwbaudio,compdata\crystal.htm,compdata\crystal.txt,%cwbaudio%,,,0xffffffe2
+s,cwcfm,compdata\cs4281.htm,compdata\cs4281.txt,%cs4281%,"%SystemRoot%\system32\drivers\cwcfm.sys","4.1.0.5000",2,ntcompat.inf,"CRYSTAL_INST"
+s,cwgmsg,compdata\cs4281.htm,compdata\cs4281.txt,%cs4281%,"%SystemRoot%\system32\drivers\cwgmsg.sys","4.1.0.5000",2
+s,cwrgal,compdata\cs4281.htm,compdata\cs4281.txt,%cs4281%,"%SystemRoot%\system32\drivers\cwrgal.sys","4.1.0.5000",2
+s,cwrgal3,compdata\cs4281.htm,compdata\cs4281.txt,%cs4281%,"%SystemRoot%\system32\drivers\cwrgal3.sys","4.1.0.5000",2
+s,cwrmmsys,compdata\cs4281.htm,compdata\cs4281.txt,%cs4281%,"%SystemRoot%\system32\drivers\cwrmmsys.sys","4.1.0.5000",2
+s,cyber,compdata\ibmvc.htm,compdata\ibmvc.txt,%ibmvc%,,,0xffffffe0
+s,d3nt,compdata\ioclick.htm,compdata\ioclick.txt,%d3nt%,,,0xffffffe0
+s,decatapi,compdata\decatapi.htm,compdata\decatapi.txt,%decatapi%,,,0xffffffe2,ntcompat.inf,"DECATAPI_INST"
+s,DIGIRPS,compdata\generic.htm,compdata\generic.txt,%DIGIRPS%,"%windir%\system32\drivers\digirlpt.sys","2.1",2
+s,dmisl,compdata\ibmsva.htm,compdata\ibmsva.txt,%dmisl%,,,0xffffffe0,ntcompat.inf,"IBMSVA_INST"
+s,dmisrv,compdata\omc.htm,compdata\omc.txt,%cmosa%,"%SystemDrive%\DMI\bin\dmisrv.exe","4.9",2
+s,dmusic,compdata\generic.htm,compdata\generic.txt,%dmusic%,,,2
+s,dock,compdata\dock.htm,compdata\dock.txt,%dock%,,,0xffffffe0,ntcompat.inf,"SOFTEXDOCK_INST"
+s,docksvc,compdata\docksvc.htm,compdata\docksvc.txt,%docksvc%,,,0xffffffe0,ntcompat.inf,"DECDOCKING_INST"
+s,drvmgr,compdata\ssi365.htm,compdata\ssi365.txt,%ssi365%,,,0xffffffe2
+s,drvncdb,compdata\drvncdb.htm,compdata\drvncdb.txt,%drvncdb%,,,0xffffffe0
+s,ds1wdm,compdata\generic.htm,compdata\generic.txt,%ds1wdm%,,,2
+s,duplexwrite,compdata\dwrite.htm,compdata\dwrite.txt,%duplexwrite%,,,0xffffffe0
+s,eawdmfd,compdata\cpqkbd.htm,compdata\cpqkbd.txt,%eawdmfd%,"%systemroot%\system32\drivers\eawdmfd.sys","3.00.000.b6",,ntcompat.inf,"cpqkbd_inst"
+s,el575nd5,compdata\generic.htm,compdata\generic.txt,%el575nd5%,,,2
+s,emu10k,compdata\generic.htm,compdata\generic.txt,%emu10k%,"%SystemRoot%\system32\drivers\emu10k1f.sys","5.12.01.3299",2,ntcompat.inf,"EMU10k1_INST"
+s,emu10kx,compdata\generic.htm,compdata\generic.txt,%emu10k%,"%SystemRoot%\system32\drivers\E10kx2k.sys","5.12.01.0129",2
+s,enabler,compdata\cardexec.htm,compdata\cardexec.txt,%cards%,,,0xffffffe2
+s,encordev,compdata\cldvd.htm,compdata\cldvd.txt,%cldvd%,,,0xffffffe0
+s,ensqio,compdata\generic.htm,compdata\generic.txt,%ensqio%,,,0xffffffe2
+s,EPPSCSIx,compdata\acer640p.htm,compdata\acer640p.txt,%WIA_ACER%,"%systemroot%\system32\drivers\eppscsi.sys","2.05.02",,NTCompat.inf,"WIA_ACER_640P_INST"
+s,essm2e,compdata\generic.htm,compdata\generic.txt,%essm2e%,,,2
+s,eusbmsd,compdata\generic.htm,compdata\generic.txt,%eusbmsd%,,,2
+s,eusmel,compdata\melco.htm,compdata\melco.txt,%Melco2%,"%systemroot%\system32\drivers\eusmel.sys","2.0.0.1",,ntcompat.inf,"MELCO_UNINSTALL"
+s,evian,compdata\generic.htm,compdata\generic.txt,%evian%,,,0x00000002
+s,exide,compdata\generic.htm,compdata\generic.txt,%exide%,"%systemroot%\system32\drivers\exide.sys","4.0.1381.1",2
+s,plscsi,compdata\generic.htm,compdata\generic.txt,%plscsi%,"%systemroot%\system32\drivers\plscsi.sys","2000.0.0.0",2
+s,faboot,compdata\fazam.htm,compdata\fazam.txt,%faboot%,"%SystemRoot%\system32\drivers\faboot.sys","3.2.5.99"
+s,fazam,compdata\fazam.htm,compdata\fazam.txt,%fazam%,"%SystemRoot%\system32\drivers\fazam.sys","3.2.5.99"
+s,fc_net,compdata\ix526fc.htm,compdata\ix526fc.txt,%iphasei%,,,0xffffffe0
+s,fcparide,compdata\maxell.htm,compdata\maxell.txt,%maxsuperd%,,,0xffffffe0
+s,fjdbpx,compdata\generic.htm,compdata\generic.txt,%fujitsu%,,,0xffffffe2
+s,fjhwmn,compdata\generic.htm,compdata\generic.txt,%fujitsu%,,,0xffffffe2
+s,flashcrd,compdata\ssi365.htm,compdata\ssi365.txt,%ssi365%,,,0xffffffe2
+s,gensmps2,compdata\genius.htm,compdata\genius.txt,%genius%,"%systemroot%\system32\drivers\gensmps2.sys","4.0.1234.1"
+s,gei8042,compdata\genius.htm,compdata\genius.txt,%genius%,"%systemroot%\system32\drivers\gensmps2.sys","5.255"
+s,gensmser,compdata\genius.htm,compdata\genius.txt,%genius%,"%systemroot%\system32\drivers\gensmser.sys","4.0.1234.1"
+s,gfx40,compdata\generic.htm,compdata\generic.txt,%gfx40%,"%systemroot%\system32\drivers\gfx40.sys","4.5",2
+s,gfxi2c,compdata\generic.htm,compdata\generic.txt,%gfx40%,"%systemroot%\system32\drivers\gfxi2c.sys","4.5",2
+s,glint,compdata\glint.htm,compdata\glint.txt,%glint%,,,0xffffffe0
+s,gp8042,compdata\cruise.htm,compdata\cruise.txt,%cirque%,"%systemroot%\system32\drivers\gp8042.sys","1.0.0.0"
+s,gpmoucls,compdata\cruise.htm,compdata\cruise.txt,%cirque%,"%systemroot%\system32\drivers\gpmoucls.sys","1.0.0.0",2
+s,gpsermou,compdata\cruise.htm,compdata\cruise.txt,%cirque%,"%systemroot%\system32\drivers\gpsermou.sys","1.0.0.0",2
+s,halhook,compdata\halhook.htm,compdata\halhook.txt,%halhook%,,,0xffffffe2
+s,hddpwdnt,compdata\tsbhddpw.htm,compdata\tsbhddpw.txt,%tsbhddpw%,,,0xffffffe0,ntcompat.inf,"tsbhddpw_Inst"
+s,hotkey,compdata\tpconfig.htm,compdata\tpconfig.txt,%tpconfig1%,,,0xffffffe0,ntcompat.inf,"TPCONFIG1_inst"
+s,hotkeyservice,compdata\tpconfig.htm,compdata\tpconfig.txt,%tpconfig1%,,,0xffffffe2
+s,hpalert,compdata\hpdmi.htm,compdata\hpdmi.txt,%hpdmi%,,,0xffffffe2
+s,hpcompcode,compdata\hpdmi.htm,compdata\hpdmi.txt,%hpdmi%,,,0xffffffe2
+s,hpgate,compdata\hpdmi.htm,compdata\hpdmi.txt,%hpdmi%,,,0xffffffe2
+f,"%systemroot%\twain_32\as6e\as6e32.ds","1.0.0.1",compdata\artcas6e.htm,compdata\artcas6e.txt,%WIA_ARTEC_AS6E%
+f,"%systemroot%\system32\hpgdtuu.dll","1.0.0.0",compdata\hp4300C.htm,compdata\hp4300C.txt,%WIA_HP_4300C%,NTCompat.inf,"WIA_HP_4300C_INST"
+f,"%systemroot%\twain_32\hpprsclt.ds","3.0.0.0",compdata\hp3300C.htm,compdata\hp3300C.txt,%WIA_HP_3300C%,NTCompat.inf,"WIA_HP_3300C_INST"
+f,"%systemroot%\twain_32\umaxsti.ds","",compdata\generic.htm,compdata\generic.txt,%W2K_INBOX_TWAIN_DS%,ntcompat.inf,"WIA_W2K_UMAX_INST",2
+f,"%systemroot%\twain_32\hpsjsrc.ds","",compdata\generic.htm,compdata\generic.txt,%W2K_INBOX_TWAIN_DS%,ntcompat.inf,"WIA_W2K_HP_INST",2
+f,"%systemroot%\twain_32\miitwain\ltwain.ds","",compdata\generic.htm,compdata\generic.txt,%W2K_INBOX_TWAIN_DS%,ntcompat.inf,"WIA_W2K_MICROTEK_INST",2
+f,"%systemroot%\twain_32\fjscan\fcpa\m3093dgs.ds","",compdata\generic.htm,compdata\generic.txt,%W2K_INBOX_TWAIN_DS%,ntcompat.inf,"WIA_W2K_FUJITSU_INST",2
+f,"%systemroot%\twain_32\fjscan\fcpa\m3093gxs.ds","",compdata\generic.htm,compdata\generic.txt,%W2K_INBOX_TWAIN_DS%,ntcompat.inf,"WIA_W2K_FUJITSU_INST",2
+f,"%systemroot%\twain_32\fjscan\fcpa\m3097dgs.ds","",compdata\generic.htm,compdata\generic.txt,%W2K_INBOX_TWAIN_DS%,ntcompat.inf,"WIA_W2K_FUJITSU_INST",2
+f,"%systemroot%\twain_32\fjscan\fcpa\m3097gp.ds","",compdata\generic.htm,compdata\generic.txt,%W2K_INBOX_TWAIN_DS%,ntcompat.inf,"WIA_W2K_FUJITSU_INST",2
+f,"%systemroot%\twain_32\fjscan\fcpa\m3096gx.ds","",compdata\generic.htm,compdata\generic.txt,%W2K_INBOX_TWAIN_DS%,ntcompat.inf,"WIA_W2K_FUJITSU_INST",2
+f,"%systemroot%\twain_32\fjscan\fcpa\m3099g.ds","",compdata\generic.htm,compdata\generic.txt,%W2K_INBOX_TWAIN_DS%,ntcompat.inf,"WIA_W2K_FUJITSU_INST",2
+f,"%systemroot%\twain_32\fjscan\fcpa\sp15cs.ds","",compdata\generic.htm,compdata\generic.txt,%W2K_INBOX_TWAIN_DS%,ntcompat.inf,"WIA_W2K_FUJITSU_INST",2
+f,"%systemroot%\twain_32\ag307.ds","",compdata\generic.htm,com

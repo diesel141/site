@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/tennis_ball.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鷲宮硬式テニスクラブ</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript">
+        function onMasterClick() {
+            var UserInput = window.prompt("パスワードを入力して下さい:", "");
+            if (UserInput == "2288") {
+                location.href = "https://www.google.co.jp";
+            } else {
+                alert("パスワードが違います！");
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-size: calc(0.8em + 0.8vw);
+        }
+    </style>
+</head>
+<body style="background-image: url('./img/sky.jpg'); background-size: cover; padding: 20px;">
+    <center>
+        <font color="white"><h2 style="background: ">鷲宮硬式テニスクラブ</h2></font>
+        <table style="width: 100%; text-align: center; table-layout: fixed;" cellspacing="10">
+            <tr>
+                <td style="width: 50%">
+                    <a href="./announcement.html" class="btn btn-yellow">
+                        お知らせ
+                    </a>
+                </td>
+                <td style="width: 50%">
+                    <a href="./nhk-reserver.html" class="btn btn-green">
+                        NHKコート<br>予約担当
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%">
+                    <a href="./court_calendar.html" class="btn btn-red">
+                        コート<br>カレンダー
+                    </a>
+                </td>
+                <td style="width: 50%">
+                    <a href="./court_schedule.html" class="btn btn-blue">
+                        コート<br>予約状況
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <input type="button" class="btn btn-master" value="マスタ管理" onclick="onMasterClick();">
+        <br><br>
+    </center>
+</body>
+</html>
