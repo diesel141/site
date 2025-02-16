@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row bg-white radius box-shadow">
     <div class="col-sm-12">
-      <p class="h1">加須ろだ</p>
+      <p class="h1">俺ろだ</p>
       <p class="h2">ファイルを登録</p>
       <form id="upload">
         <input id="defile" name="file" type="file" style="display:none">

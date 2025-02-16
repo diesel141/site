@@ -20,7 +20,7 @@ class config {
       'key'                 => 'hogehoge',
 
       // タイトル
-      'title'               => '加須ろだ',
+      'title'               => '俺ろだ',
 
       // 保存ファイル数
       'save_max_files'      => 500,
@@ -31,10 +31,10 @@ class config {
       // 1件あたりの最大ファイルサイズ(単位 : MByte)
       // php.iniのmemory_limit, post_max_size, upload_max_filesizeの値以下になるようにして下さい。
       // nginxを使用している場合はサーバー設定にclient_max_body_sizeをこの値で設定してください。
-      'max_file_size'       => 650,
+      'max_file_size'       => 1024,
 
       // アップロードできる拡張子
-      'extension'           => array('zip','rar','lzh','mp3'),
+      'extension'           => array('zip','rar','lzh','mp3','mp4'),
 
       // データベースディレクトリ
       'db_directory'        => './db',
