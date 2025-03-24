@@ -1,8 +1,4 @@
-# Default ignored files
-/shelf/
-/.idea/workspace.xml
+.idea/*
+.vs/*
 
-.idea/
-www/ARGS/storage/
-www/old/
-www/marudai
+.kazoloader/data/*
