@@ -1,0 +1,203 @@
+<!doctype html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+
+    <title>発注書 入力</title>
+    <meta name="description" content="The HTML5 Herald">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/html2canvas.js"></script>
+    <script src="./init_order.js"></script>
+    <script src="./order_input_hokkaiya.js"></script>
+</head>
+<body>
+<center>
+    <table border="1" style="border-collapse: collapse; font-size: 25px" width="100%" cellpadding="5">
+        <tr>
+            <th colspan="4" bgcolor="darkgreen"><font size="7" color="white">発注書<br/>(株)青果問屋まるだい</font></th>
+        </tr>
+        <tr>
+            <th colspan="4">
+                発注日　
+<!--
+                <select id="year" style="width: 120px; height: 50px; font-size: 30px;">
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+-->
+                <label id="year" style="width: 120px; height: 50px; font-size: 30px;"></label>
+                　年　
+<!--
+                <select id="month" style="width: 100px; height: 50px; font-size: 30px;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+-->
+                <label id="month" style="width: 100px; height: 50px; font-size: 30px;"></label>
+                　月　
+<!--
+                <select id="day" style="width: 100px; height: 50px; font-size: 30px;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>　日
+-->
+                <label id="day" style="width: 100px; height: 50px; font-size: 30px;"></label>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="4" bgcolor="lightblue"><font size="6">cs＝ケース ／ pc＝パック ／ nt＝ネット</font></th>
+        </tr>
+        <tr>
+            <td id="s_1" width="23%">大根</td>
+            <td align="right" width="27%"><input type="number" id="1" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_1">cs</font></td>
+            <td id="s_2" width="23%">ナス</td>
+            <td align="right" width="27%"><input type="number" id="2" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_2">pc</font></td>
+        </tr>
+        <tr>
+            <td id="s_3">生姜</td>
+            <td align="right"><input type="number" id="3" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_3">cs</font></td>
+            <td id="s_4">三つ葉</td>
+            <td align="right"><input type="number" id="4" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_4">束</font></td>
+        </tr>
+        <tr>
+            <td id="s_5">メークイン</td>
+            <td align="right"><input type="number" id="5" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_5">cs</font></td>
+            <td id="s_6">レモン</td>
+            <td align="right"><input type="number" id="6" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_6">cs</font></td>
+        </tr>
+        <tr>
+            <td id="s_7">男爵</td>
+            <td align="right"><input type="number" id="7" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_7">cs</font></td>
+            <td id="s_8">春菊</td>
+            <td align="right"><input type="number" id="8" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_8">束</font></td>
+        </tr>
+        <tr>
+            <td id="s_9">ネギ</td>
+            <td align="right"><input type="number" id="9" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_9">cs</font>
+                              <input type="number" id="9_2" style="width: 22%; height: 25px; font-size: 25px; margin-left: 5px; margin-right: 5px;"><font id="u_9_2">本</font>
+                </td>
+            <td id="s_10">白菜</td>
+            <td align="right"><input type="number" id="10" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_10">束</font></td>
+        </tr>
+        <tr>
+            <td id="s_11">レンソウ</td>
+            <td align="right"><input type="number" id="11" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_11">束</font></td>
+            <td id="s_12">パセリ</td>
+            <td align="right"><input type="number" id="12" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_12">束</font></td>
+        </tr>
+        <tr>
+            <td id="s_13">ゴボウ</td>
+            <td align="right"><input type="number" id="13" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_13">本</font></td>
+            <td id="s_14">グレープフルーツ</td>
+            <td align="right"><input type="number" id="14" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_14">cs</font></td>
+        </tr>
+        <tr>
+            <td id="s_15">キュウリ</td>
+            <td align="right"><input type="number" id="15" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_15">本</font></td>
+            <td id="s_16">エシャロット</td>
+            <td align="right"><input type="number" id="16" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_16">cs</font></td>
+        </tr>
+        <tr>
+            <td id="s_17">レタス</td>
+            <td align="right"><input type="number" id="17" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_17">個</font></td>
+            <td id="s_18">生しいたけ</td>
+            <td align="right"><input type="number" id="18" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_18">pc</font></td>
+        </tr>
+        <tr>
+            <td id="s_19">サニーレタス</td>
+            <td align="right"><input type="number" id="19" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_19">束</font></td>
+            <td id="s_20">まいたけ</td>
+            <td align="right"><input type="number" id="20" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_20">pc</font></td>
+        </tr>
+        <tr>
+            <td id="s_21">トマト</td>
+            <td align="right"><input type="number" id="21" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_21">cs</font></td>
+            <td id="s_22">セリ</td>
+            <td align="right"><input type="number" id="22" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_22">束</font></td>
+        </tr>
+        <tr>
+            <td id="s_23">キャベツ</td>
+            <td align="right"><input type="number" id="23" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_23">個</font></td>
+            <td id="s_24">牛乳</td>
+            <td align="right"><input type="number" id="24" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_24">本</font></td>
+        </tr>
+        <tr>
+            <td id="s_25">エノキ</td>
+            <td align="right"><input type="number" id="25" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_25">pc</font></td>
+            <td id="remarks_title" colspan="2" rowspan="5">備考<textarea id="remarks" style="width: 99%; margin:0px; padding:0px; "></textarea></td>
+        </tr>
+        <tr>
+            <td id="s_26">大葉</td>
+            <td align="right"><input type="number" id="26" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_26">pc</font></td>
+        </tr>
+        <tr>
+            <td id="s_27">万のう</td>
+            <td align="right"><input type="number" id="27" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_27">pc</font></td>
+        </tr>
+        <tr>
+            <td id="s_28">ニンニク</td>
+            <td align="right"><input type="number" id="28" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_28">nt</font></td>
+        </tr>
+        <tr>
+            <td id="s_29">長いも</td>
+            <td align="right"><input type="number" id="29" style="width: 22%; height: 25px; font-size: 25px; margin-right: 5px;"><font id="u_29">本</font></td>
+        </tr>
+        <tr>
+            <th colspan="4" bgcolor="brass"><font size="7" color="white">ほっかいや　048-644-9118</font>
+            </th>
+        </tr>
+    </table>
+    <br/>
+    <input id="order" type="button" value="注文"
+           style="width: 400px; height: 80px; font-size: 1.5em; font-weight: bold;">
+    <br/>
+    <br/>
+    <img src="" id="result" style="visibility:hidden"/>
+</center>
+</body>
+</html>
