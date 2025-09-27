@@ -1,4 +1,5 @@
-let studioName = "MUSE-GYM（加須）";
+//let studioName = "MUSE-GYM（加須）";
+let studioName = "STUDIO PARK SIDE（戸田）";
 let movieNum;
 let flatNum = 0;
 let vrNum = 0;
@@ -10,7 +11,7 @@ function getConvertResultHtml(movieNames) {
       if (records[i].split(",")[0] == "2d") {
         flatNum++;
       }
-      if (records[i].split(",")[0] == "3d") {
+      if (records[i].split(",")[0] == "360") {
         vrNum++;
       }
     }
