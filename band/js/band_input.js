@@ -1,5 +1,5 @@
-//let studioName = "MUSE-GYM（加須）";
-let studioName = "STUDIO PARK SIDE（戸田）";
+let studioName = "MUSE-GYM（加須）";
+//let studioName = "STUDIO PARK SIDE（戸田）";
 let movieNum;
 let flatNum = 0;
 let vrNum = 0;

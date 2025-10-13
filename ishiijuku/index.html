@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<center>
+<head>
+	<!--　https://diesel141.myqnapcloud.com/site/ishiijuku/ -->
+	<meta charset="UTF-8">
+	<meta name="google-site-verification" content="mlqgxSd9LeCIOYwBymh2vX2U-46Hu7OGJj8VL1xfe78" />
+	<meta name="msvalidate.01" content="8717BC9F439F736C5340033695C81AB9" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		var includes = $('[page-include]');
+			jQuery.each(includes, function(){
+			var file = "./src/" + $(this).data("include") + '.html';
+			$(this).load(file);
+		});
+		$(function () {
+			$("#content section").hide();
+			$($("#tab a.selected").attr("href")).show();
+			$("#tab li a").click(function () {
+				$("#tab li a").removeClass();
+				$(this).addClass("selected");
+				$("#content section").hide();
+				$($(this).attr("href")).fadeIn();
+				return false;
+			});
+		});
+		if (window.name != "xyz") {
+			location.reload();
+			window.name = "xyz";
+		}
+	</script>
+
+	<title>能力育成教室 いしい塾</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<header>
+		<ul id="tab">
+			<li><a class="selected" href="#tab1">ホーム</a></li>
+			<li><a href="#tab2">入塾要項</a></li>
+			<li><a href="#tab3">その他教材費など</a></li>
+			<li><a href="#tab4">無料体験学習</a></li>
+		</ul>
+	</header>
+</head>
+<body style="overflow:scroll;">
+	<div id="content">
+		<section id="tab1">
+<div style="background-image: url('./res/main-bg.png'); background-size:cover;">
+	<br>
+	<br>
+	<br>
+	<span class="gradation-title">輝く未来のために</span>
+	<div style="font-size: 60px; font-weight: bold; color: #ff4500">入塾ご案内</div>
+	<br>
+	<div style="font-size: 25px; font-weight: bold;"><a href="http://maps.google.co.jp/maps?q=%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%B2%A9%E6%A7%BB%E5%8C%BA%E5%8D%97%E5%B9%B3%E9%87%8E1-18-19">〒３３９－００５１　　　　　　　　　　　　　　</a></div>
+	<div style="font-size: 30px; font-weight: bold;"><a href="http://maps.google.co.jp/maps?q=%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%B2%A9%E6%A7%BB%E5%8C%BA%E5%8D%97%E5%B9%B3%E9%87%8E1-18-19">岩槻区南平野1－18－19（ココスうら）</a></div>
+	<br>
+	<br>
+	<table>
+		<tr>
+			<td>
+				<div style="font-size: 30px;">ＴＥＬ　</div>
+			</td>
+			<td>
+				<div style="font-size: 30px;"><a href="tel:0487579720">０４８－７５７－９７２０</a></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div style="font-size: 30px;">携帯</div>
+			</td>
+			<td>
+				<div style="font-size: 30px;"><a href="tel:09049107758">０９０－４９１０－７７５８</a></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div style="font-size: 30px;">メール</div>
+			</td>
+			<td>
+				<div style="font-size: 30px;"><a href="mailto:iiisss0728@docomo.ne.jp">iiisss0728@docomo.ne.jp</a></div>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<td><div style="font-size: 50px; font-weight: bold; color: #228b22">能力育成教室　</div></td>
+			<td><div style="font-size: 70px; font-weight: bold; color: #228b22">いしい塾</div></td>
+		<tr>
+	</table>
+	<br>
+	<table style="display:none">
+		<tr>
+			<td><div style="font-size: 50px; font-weight: bold; color: #228b22">いしいそろばん</div></td>
+			<td><div style="font-size: 70px; font-weight: bold; color: #228b22">石井そろばん</div></td>
+		<tr>
+	</table>
+	<br>
+</div>
+		</section>
+		<section id="tab2">
+			<img src="./res/overview.jpg" alt="入塾要項">
+		</section>
+		<section id="tab3">
+			<img src="./res/materials.jpg" alt="その他教材費など">
+		</section>
+		<section id="tab4">
+			<img src="./res/experience.jpg" alt="無料体験学習">
+		</section>
+	</div>
+</body>
+</center>
+</html>

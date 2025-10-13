@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* ------- base ------- */
+
+html,body, #content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body, div, ul, li {
+  margin-top: 0px;
+  padding:0;
+}
+
+img {
+  border: 0;
+  width: 80%;
+  height: auto;
+}
+
+body {
+  background-color: #D8D8C5;	
+  font-size: 62.5%;
+  font-family: 
+    "Hiragino Kaku Gothic ProN",
+    Meiryo,
+    sans-serif;
+  color: #292623;
+}
+
+a {
+  text-decoration: none;
+  color: #292623;
+}
+
+.clearfix:after {
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  display: block;
+  clear: both;
+}
+
+/* ------- header ------- */
+
+header {
+width: 720px;
+  height: 60px;
+}
+
+#header-inner {
+  height: 60px;
+}
+
+/* ------- tab ------- */
+
+#tab {
+  height: 60px;
+}
+
+#tab li {
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
+  list-style-type: none;
+}
+
+#tab li a {
+  display:block;
+  width: 176px;
+  height: 54px;
+  padding-top: 26px;
+  font-size: 1.8em;
+  text-align:center;
+  background-color: #494941;
+  color:#FFF;
+}
+
+#tab li a:hover {
+  background-color: #747468;
+  color:#FFF;
+}
+
+#tab li a.selected {
+  background-color: #FFF;
+  color:#292623;
+}
+
+/* ------- content ------- */
+
+#content {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+span.gradation-title {
+  font-size: 80px;
+  font-weight:bold;
+  background: -webkit-linear-gradient(#ff4500, #f0e68c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 1px;
+}
