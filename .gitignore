@@ -5,6 +5,8 @@
 kazoloader/MIT-LICENSE.txt
 kazoloader/README.md
 kazoloader/data/*
+kazoloader/db/uploader.db
 marudai/order/*
 www/
 uploader/
+oauthtest/clientinfo.txt
